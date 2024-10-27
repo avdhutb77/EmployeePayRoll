@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payroll Dashboard</title>
+    <link rel="stylesheet" href="../CSS/EmployeePayrollDashboard.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery CDN -->
+    <script defer src="../JS/Api.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header-content header" id="headerID">
+      <div class="logo-content">
+        <img src="../../assets/logo.png" alt="Logo" />
+        <div>
+          <span class="emp-text">EMPLOYEE</span>
+          <br />
+          <span class="emp-text emp-payroll">PAYROLL</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <div class="header-content">
+        <div class="emp-detail-text">
+          Employee Details
+        </div>
+
+        <div class="searchBar">
+          <input
+            id="search-input"
+            class="search"
+            type="text"
+            placeholder="Search user"
+          />
+          <img
+            id="search-button"
+            class="searchIcon"
+            src="../assets/icons8-search-50.png"
+            alt="Search Icon"
+          />
+        </div>
+
+        <div class="searchAddUser-cnt">
+          <a href="/Pages/EmployeePayrollRegister.html" class="add-button"> <!-- Redirect to registration page -->
+            <img src="../assets/icons8-add-24.png" alt="Add User" /> Add User
+          </a>
+        </div>
+      </div>
+
+      <table id="display" class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Start Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <!-- Dynamic content will be appended here -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="../JS/DashboardDOM.js">
+    </script>
+</body>
+</html>

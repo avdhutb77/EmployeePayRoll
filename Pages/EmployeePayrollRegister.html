@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payroll Form</title>
+    <link rel="stylesheet" href="../CSS/EmployeePayrollRegister.css">
+    
+
+    
+    </head>
+    <body>
+        <header class="header-content header" id="headerID">
+            <div class="logo-content">
+                <img src="../assets/logo.png" alt="Logo" />
+                <div>
+                    <span class="emp-text"> EMPLOYEE </span>
+                    <br />
+                    <span class="emp-text emp-payroll">PAYROLL</span>
+                </div>
+            </div>
+        </header>
+    
+        <div class="form-content">
+            <form class="registerForm" id="emp-form">
+                <div class="form-head">Employee Payroll Form</div>
+    
+                <!-- Name -->
+                <div class="row-content">
+                    <label class="label text" for="name"> Name: </label>
+                    <input class="input" type="text" id="emp-name" placeholder="Your name" required />
+                </div>
+    
+                <!-- Profile Image -->
+                <div class="row-content">
+                    <label for="profile" class="label text">Profile Image:</label>
+                    <div class="profile-radio-content">
+                        <label>
+                            <input type="radio" name="profile" id="profile1" value="profile1.png" required />
+                            <img src="../assets/profile1.png" class="profile" alt="Avatar 1" />
+                        </label>
+                        <label>
+                            <input type="radio" name="profile" id="profile2" value="profile2.png" required />
+                            <img src="../assets/profile2.png" class="profile" alt="Avatar 2" />
+                        </label>
+                        <label>
+                            <input type="radio" name="profile" id="profile3" value="profile3.png" required />
+                            <img src="../assets/profile3.png" class="profile" alt="Avatar 3" />
+                        </label>
+                        <label>
+                            <input type="radio" name="profile" id="profile4" value="profile4.png" required />
+                            <img src="../assets/profile4.png" class="profile" alt="Avatar 4" />
+                        </label>
+                    </div>
+                </div>
+    
+                <!-- Gender -->
+                <div class="row-content">
+                    <label for="gender" class="label text">Gender:</label>
+                    <div>
+                        <input type="radio" name="gender" id="male" value="male" required />
+                        <label for="male" class="text">Male</label>
+                        <input type="radio" name="gender" id="female" value="female" required />
+                        <label for="female" class="text">Female</label>
+                    </div>
+                </div>
+    
+                <!-- Department -->
+                <div class="row-content">
+                    <label for="department" class="label text">Department:</label>
+                    <div>
+                        <input type="checkbox" name="department" id="hr" value="HR" />
+                        <label for="hr" class="text">HR</label>
+                        <input type="checkbox" name="department" id="sales" value="Sales" />
+                        <label for="sales" class="text">Sales</label>
+                        <input type="checkbox" name="department" id="finance" value="Finance" />
+                        <label for="finance" class="text">Finance</label>
+                        <input type="checkbox" name="department" id="engineer" value="Engineer" />
+                        <label for="engineer" class="text">Engineer</label>
+                        <input type="checkbox" name="department" id="others" value="Others" />
+                        <label for="others" class="text">Others</label>
+                    </div>
+                </div>
+    
+                <!-- Salary -->
+                <div class="row-content">
+                    <label for="salary" class="label text">Choose your salary: </label>
+                    <select id="salary" class="input" required>
+                        <option value="" disabled selected>Salary</option>
+                        <option value="300000">300,000</option>
+                        <option value="400000">400,000</option>
+                        <option value="500000">500,000</option>
+                        <option value="1000000">1,000,000</option>
+                        <option value="2000000">2,000,000</option>
+                        <option value="3000000">3,000,000</option>
+                        <option value="4000000">4,000,000</option>
+                        <option value="5000000">5,000,000</option>
+                    </select>
+                </div>
+    
+                <!-- Start Date -->
+                <div class="row-content">
+                    <label for="startDate" class="label text">Start Date:</label>
+                    <div>
+                        <select name="day" id="day" required>
+                            <option value="" disabled selected>Day</option>
+                            
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            
+                        </select>
+                        <select name="month" id="month" required>
+                            <option value="" disabled selected>Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+
+                            
+                        </select>
+                        <select name="year" id="year" required>
+                            <option value="" disabled selected>Year</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            
+                        </select>
+                    </div>
+                </div>
+    
+                <!-- Notes -->
+                <div class="row-content">
+                    <label for="notes" class="label text">Notes:</label>
+                    <textarea id="notes" class="input" placeholder="Notes"></textarea>
+                </div>
+    
+                <!-- Buttons -->
+                <div class="buttonParent">
+                    <button type="button" class="button cancelButton" id="cancelBtn">Cancel</button>
+                    <div class="submit-reset">
+                        <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+                        <button type="reset" class="button resetButton" id="resetButton">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="../JS/RegistrationDOM.js"></script>
+
+    </body>
+    </html>
+    
